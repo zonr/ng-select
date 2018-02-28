@@ -8,7 +8,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const {TsConfigPathsPlugin} = require('awesome-typescript-loader');
-
+ 
 const root = path.join.bind(path, path.resolve(__dirname, '..'));
 
 const ENV = process.env.npm_lifecycle_event;
@@ -57,9 +57,6 @@ module.exports = function makeWebpackConfig() {
                     test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                     loader: 'file-loader?name=fonts/[name].[hash].[ext]?'
                 },
-
-                // Support for *.json files.
-                {test: /\.json$/, loader: 'json-loader'},
 
                 // all scss files in app demo style will be merged to index.html
                 {

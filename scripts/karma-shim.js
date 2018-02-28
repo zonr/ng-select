@@ -1,8 +1,6 @@
 Error.stackTraceLimit = Infinity;
 
-require('core-js/client/shim');
 require('reflect-metadata');
-
 require('ts-helpers');
 
 require('zone.js/dist/zone');
