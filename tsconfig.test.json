@@ -3,9 +3,9 @@
   "compilerOptions": {
     "baseUrl": "",
     "module": "commonjs",
-    "declaration": false,
     "emitDecoratorMetadata": true,
-    "noEmitHelpers": true
+    "noEmitHelpers": false,
+    "importHelpers": false
   },
   "include": [
     "src/**/*"
